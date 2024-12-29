@@ -63,14 +63,25 @@
         </button>
       </div>
 
+  <!--#region      Mobile menu -->
+
       <!--  is-open is-open is-open is-open-->
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">Close</button>
+          <button type="button" class="mobile-menu-close">
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
           <nav class="mobile-menu-nav">
             <ul class="mobile-list-nav">
               <li class="mobile-list-nav-item">
-                <a class="mobile-list-nav-link mobile-current" href="./index.html">Studio</a>
+                <a
+                  class="mobile-list-nav-link mobile-current"
+                  href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="mobile-list-nav-item">
                 <a class="mobile-list-nav-link" href="">Portfolio</a>
@@ -80,23 +91,76 @@
               </li>
             </ul>
           </nav>
-          <address>Address</address>
-          <div>Soc link</div>
+
+          <address class="mobile-connect">
+            <ul class="mobile-connect-list">
+              <li class="mobile-connect-list-item">
+                <a
+                  class="mobile-connect-list-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-connect-list-item">
+                <a class="mobile-connect-list-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+<div class="mobile-soc-link">
+  <ul class="mobile-soc-icon-list">
+
+    <li class="mobile-soc-icon-item">
+      <a class="mobile-menu-soc-link" href="">
+        <svg class="mobile-menu-soc-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="mobile-soc-icon-item">
+      <a class="mobile-menu-soc-link" href="">
+        <svg class="mobile-menu-soc-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="mobile-soc-icon-item">
+      <a class="mobile-menu-soc-link" href="">
+        <svg class="mobile-menu-soc-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="mobile-soc-icon-item">
+      <a class="mobile-menu-soc-link" href="">
+        <svg class="mobile-menu-soc-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
         </div>
       </div>
+<!--#endregion Mobile menu -->
     </header>
 
     <main>
-      <section class="hidden" class="solutions">
+      <section  class="solutions">
         <div class="container">
           <h1 class="solutions-text">Effective Solutions for Your Business</h1>
           <button class="solutions-button" type="button">Order Service</button>
         </div>
       </section>
 
-      <section class="hidden" class="section-two">
+      <section class="section-foundations">
         <div class="container">
-          <h2 class="visually-hidden">section2</h2>
+          <h2 class="visually-hidden">foundations</h2>
           <ul class="list-foundations">
             <li class="foundations-item">
               <div class="foundations-icon-box">
@@ -542,7 +606,7 @@
       </div>
     </footer>
 
-    <!-- modal   modal   modal   modal    modal   modal   -->
+    <!--#region modal   modal   modal   modal    modal   modal   -->
 
     <!-- is-open  -->
     <div class="hidden" class="backdrop is-open">
@@ -643,5 +707,6 @@
         </form>
       </div>
     </div>
+    <!--#endregion modal   modal   modal   modal    modal   modal   -->
   </body>
 </html>
