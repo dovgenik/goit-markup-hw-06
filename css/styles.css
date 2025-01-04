@@ -1211,33 +1211,46 @@ button {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 16px 24px 16px;
-    /* width: 288px; */
-    overflow-y: auto;
-    
-    max-width: 90vw;
-    max-height: 65vh;
+    width: 288px;
+    height: 623px;
 }
 
-.backdrop:not(is-open) .modal {
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.backdrop:not(is-open).modal {
     transform: translate(-50%, -50%) scale(1.5);
 }
+
+.modal-text-container {
+
+    width: 256px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
 
 .key-close {
     cursor: pointer;
@@ -1278,15 +1291,6 @@ button {
     fill: #ffffff;
 }
 
-.modal-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 16px;
-}
 
 .form-wrapper-container {
     margin-bottom: 8px;
@@ -1443,10 +1447,14 @@ button {
 @media screen and (min-width: 768px) {
     .modal {
         width: 408px;
-
+        height: 584px;
         padding: 72px 24px 24px 24px;
     }
+    .modal-text-container {
 
+        width: 360px;
+        height: 24px;
+    }
     .form-comment {
         padding: 4px 24px 16px 24px;
     }
