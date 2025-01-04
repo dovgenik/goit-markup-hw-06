@@ -1231,12 +1231,7 @@ button {
     pointer-events: auto;
 }
 
-.backdrop:not(is-open).modal {
-    transform: translate(-50%, -50%) scale(1.5);
-}
-
 .modal-text-container {
-
     width: 256px;
     height: 48px;
     margin-bottom: 16px;
